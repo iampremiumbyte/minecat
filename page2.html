@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Freak Mill" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>$MINECAT</title>
+  </head>
+  <body>
+    <img
+      src="/assets/img/site-desktop/site-page1-desktop.png"
+      usemap="#image-map"
+      class="desktop"
+    />
+    <img
+      src="/assets/img/site-mobile/page1mobile.png"
+      usemap="#image-map2"
+      class="mobile"
+    />
+
+    <div class="desktop">
+      <map name="image-map" class="desktop">
+        <area
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="552,446,1363,521"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="554,580,1366,648"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt=""
+          title=""
+          href="/page3.html"
+          coords="845,842,1080,916"
+          shape="rect"
+        />
+      </map>
+    </div>
+
+    <div class="mobile">
+      <map name="image-map2" class="mobile">
+        <area
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="130,930,940,1005"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt=""
+          title=""
+          href=""
+          coords="123,1058,939,1127"
+          shape="rect"
+        />
+        <area
+          target=""
+          alt=""
+          title=""
+          href="page3.html"
+          coords="417,1323,646,1391"
+          shape="rect"
+        />
+      </map>
+    </div>
+
+    <audio id="bgAud" src="/assets/bg.mp3" autoplay loop></audio>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+  </body>
+</html>
