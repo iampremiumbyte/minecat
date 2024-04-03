@@ -8,6 +8,10 @@
     <title>$MINECAT</title>
   </head>
   <body>
+    <div class="overlay" id="overlay">
+      <button id="openBtn">Open</button>
+    </div>
+
     <img
       src="/assets/img/site-desktop/site-page1-desktop.png"
       usemap="#image-map"
@@ -81,7 +85,13 @@
 
     <script>
       const aud = document.querySelector("#bgAud");
-      aud.play();
+      const openBtn = document.querySelector("#openBtn");
+      const overlay = document.querySelector("#overlay");
+
+      openBtn.addEventListener("click", (e) => {
+        overlay.style.display = "none";
+        aud.play();
+      });
     </script>
 
     <script
