@@ -45,8 +45,12 @@
       </map>
     </div>
 
-    <audio id="bgAud" src="/assets/bg.mp3" autoplay loop></audio>
+    <audio id="bgAud" src="/assets/bg.mp3" loop></audio>
 
+    <script>
+      const aud = document.querySelector("#bgAud");
+      aud.play();
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
       integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
