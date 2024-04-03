@@ -51,12 +51,12 @@ img {
     padding: 1em 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em;
-    background-color: rgb(7, 169, 232);
+    background-color: rgb(0, 0, 0);
     color: #fff;
     outline: none;
+    border: none;
     border-radius: 10px;
     border-radius: none;
-    text-transform: uppercase;
     cursor: pointer;
 }
 
